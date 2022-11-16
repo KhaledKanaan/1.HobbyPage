@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  background-color: #080808;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s ease-in-out;
+}
+
+.nav:hover {
+  background-color: rgba(240, 255, 255, 0.144);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 100%;
+  padding: 0 5%;
+  color: white;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: rgba(240, 255, 255, 0.308);
+  color: black;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: 10;
+  top: -60px;
+}
+
+.intro {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("photos/cover.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+
+.main-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  color: white;
+  font-size: 150px;
+  font-weight: bold;
+  letter-spacing: 1.5vw;
+  font-family: sans-serif;
+}
+
+.date {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 80px;
+  z-index: 10;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section {
+  height: auto;
+  width: 1024px;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+}
+
+.paragraph {
+  text-align: center;
+  color: white;
+  text-justify: distribute;
+  text-align: justify;
+}
+
+.clearance {
+  height: 150px;
+  background-image: url("photos/concert.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+
+.separator {
+  height: 1px;
+  background-color: white;
+  opacity: 0.2;
+  width: 100%;
+  margin-bottom: 12px;
+  margin-top: 2px;
+}
+
+.leg-hits {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
+
+.leg-hit {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-position: top center;
+  background-size: cover;
+  transition: 500ms ease-out;
+  filter: grayscale(50%);
+}
+
+.leg-hit:hover .info-box {
+  transform: translateY(-200px);
+}
+
+.leg-hit:hover .leg-hit-desc {
+  visibility: visible;
+}
+
+.leg-hit:hover .leg-img {
+  filter: blur(4px);
+}
+
+.leg-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.leg-hit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.info-box {
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  transition: 0.8s ease-in-out;
+  margin: 2px;
+}
+
+.leg-hit-title {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.leg-hit-desc {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  margin-bottom: 8px;
+  visibility: hidden;
+  animation: 1s cubic-bezier(0.6, 0.46, 1, 0);
+}
+
+.latest-hits-img {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: 5px;
+  object-fit: cover;
+  transition: 500ms ease-out;
+}
+
+.latest-hits-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.latest-hits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.latest-album-title {
+  color: white;
+  margin: 8px;
+}
+
+.hits-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+li {
+  color: white;
+  margin: 5px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #080808;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width:920px) {
+  .main-title{
+    font-size: 15vw;
+  }  
+}
+
+@media screen and (max-width:720px) {
+  .item{
+    font-size: 12px;
+    padding: 0 3%;
+  }
+}
