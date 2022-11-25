@@ -12,6 +12,7 @@ html, body {
   width: 100%;
 }
 
+
 header {
   position: relative;
   width: 100%;
@@ -219,7 +220,6 @@ main {
 
 .latest-hits-img:hover {
   transform: scale(1.05);
-  cursor: pointer;
 }
 
 .latest-hits {

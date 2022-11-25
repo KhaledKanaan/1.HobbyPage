@@ -6,7 +6,6 @@ let year = date.getFullYear();
 
 document.getElementById("date").innerHTML = `${day}.${month}.${year}`;
 
-
 var nav_item_1 = document.querySelector('#nav-item-1');
 var nav_item_2 = document.querySelector('#nav-item-2');
 var nav_item_3 = document.querySelector('#nav-item-3');
